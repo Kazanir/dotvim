@@ -7,6 +7,3 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = http://github.com/groenewege/vim-less.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
