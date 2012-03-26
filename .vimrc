@@ -19,7 +19,6 @@ set viminfo='20,\"50
 set cindent
 set autoindent
 set expandtab
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 au BufRead,BufNewFile *.ctp set filetype=php
 call pathogen#infect()
@@ -30,5 +29,6 @@ set cinkeys-=0#
 set indentkeys-=0#
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P\ %{fugitive#statusline()}
 
 " vim: set ft=vim :
