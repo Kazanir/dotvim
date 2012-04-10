@@ -32,5 +32,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P\ %{fugitive#statusline()}
 let g:symfony_app_console_caller="php"
 let g:symfony_app_console_path="app/console"
+let feature_filetype='behat'
 
 " vim: set ft=vim :
