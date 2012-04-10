@@ -22,3 +22,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/vim-behat"]
+	path = bundle/vim-behat
+	url = git://github.com/veloce/vim-behat.git
