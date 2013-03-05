@@ -1,3 +1,5 @@
+let $VIMRUNTIME="/home/jhaskell/vim/vim73/runtime"
+
 version 6.0
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
@@ -22,7 +24,7 @@ set expandtab
 set laststatus=2
 au BufRead,BufNewFile *.ctp set filetype=php
 call pathogen#infect()
-syntax on
+
 filetype plugin indent on
 colorscheme solarized
 set cinkeys-=0#
@@ -34,5 +36,12 @@ let g:symfony_app_console_caller="php"
 let g:symfony_app_console_path="app/console"
 let feature_filetype='behat'
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+"This allows for change paste motion cp{motion}
+nmap <silent> cp :set opfunc=ChangePaste<CR>g@
+function! ChangePaste(type, ...)
+    silent exe "normal! `[v`]\"_c"
+    silent exe "normal! p"
+endfunction
 
 " vim: set ft=vim :
