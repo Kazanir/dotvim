@@ -29,10 +29,16 @@ set cinkeys-=0#
 set indentkeys-=0#
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P\ %{fugitive#statusline()}
+"set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P\ %{fugitive#statusline()}
 let g:symfony_app_console_caller="php"
 let g:symfony_app_console_path="app/console"
+let g:Powerline_symbols="fancy"
+let g:nerdtree_tabs_meaningful_tab_names=1
+let g:nerdtree_tabs_autoclose=1
+let g:nerdtree_tabs_synchronize_view=1
 let feature_filetype='behat'
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+set encoding=utf-8
+set t_Co=256
 
 " vim: set ft=vim :

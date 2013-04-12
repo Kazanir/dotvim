@@ -12,3 +12,14 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
+Troubleshooting:
+    Q) The status line has unrecognized characters!
+    A) You need to patch your font to work with vim-powerline. Go to:
+
+       https://github.com/fatih/subvim/tree/master/vim/base/vim-powerline/fontpatcher
+
+       for instructions on how to do this. Alternatively, remove the line:
+
+       let g:Powerline_symbols="fancy"
+
+       from .vimrc to enable standard symbols.
