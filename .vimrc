@@ -1,5 +1,3 @@
-let $VIMRUNTIME="/home/jhaskell/vim/vim73/runtime"
-
 version 6.0
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
@@ -42,6 +40,8 @@ let feature_filetype='behat'
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set encoding=utf-8
 set t_Co=256
+
+syntax on
 
 "This allows for change paste motion cp{motion}
 nmap <silent> cp :set opfunc=ChangePaste<CR>g@
