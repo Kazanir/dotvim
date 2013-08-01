@@ -37,7 +37,7 @@ let g:nerdtree_tabs_meaningful_tab_names=1
 let g:nerdtree_tabs_autoclose=1
 let g:nerdtree_tabs_synchronize_view=1
 let feature_filetype='behat'
-nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+"nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set encoding=utf-8
 set t_Co=256
 
