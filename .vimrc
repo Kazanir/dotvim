@@ -50,4 +50,19 @@ function! ChangePaste(type, ...)
     silent exe "normal! p"
 endfunction
 
+let b:phpgetset_setterTemplate =
+  \ "    \n" .
+  \ "    /**\n" .
+  \ "     * Set %varname%.\n" .
+  \ "     *\n" .
+  \ "     * @param %varname% the value to set.\n" .
+  \ "     * @return self\n" .
+  \ "     */\n" .
+  \ "    public function %funcname%($%varname%)\n" .
+  \ "    {\n" .
+  \ "        $this->%varname% = $%varname%;\n" .
+  \ "        \n" .
+  \ "        return $this\n" .
+  \ "    }"
+
 " vim: set ft=vim :

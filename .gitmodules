@@ -49,3 +49,6 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = https://github.com/evidens/vim-twig
+[submodule "bundle/php-getter-setter"]
+	path = bundle/php-getter-setter
+	url = https://github.com/docteurklein/php-getter-setter.vim.git
