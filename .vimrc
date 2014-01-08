@@ -51,7 +51,7 @@ function! ChangePaste(type, ...)
 endfunction
 
 let b:phpgetset_setterTemplate =
-  \ "    \n" .
+  \ "\n" .
   \ "    /**\n" .
   \ "     * Set %varname%.\n" .
   \ "     *\n" .
