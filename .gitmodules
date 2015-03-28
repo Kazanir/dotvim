@@ -54,4 +54,7 @@
 	url = https://github.com/docteurklein/php-getter-setter.vim.git
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
+  url = https://github.com/flazz/vim-colorschemes.git
+[submodule "bundle/php.vim"]
+  path = bundle/php.vim
+  url = https://github.com/StanAngeloff/php.vim.git
