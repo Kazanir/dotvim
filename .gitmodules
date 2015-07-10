@@ -61,3 +61,7 @@
 [submodule "bundle/php.vim"]
   path = bundle/php.vim
   url = https://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/vdebug"]
+  path = bundle/vdebug
+  url = https://github.com/joonty/vdebug.git
+
