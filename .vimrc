@@ -1,8 +1,3 @@
-" Following lines added by drush vimrc-install on Sat, 28 Mar 2015 15:07:49 +0000.
-set nocompatible
-call pathogen#infect('/home/kazanir/.drush/vimrc/bundle')
-call pathogen#infect('/home/kazanir/.vim/bundle')
-" End of vimrc-install additions.
 version 6.0
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
@@ -25,6 +20,7 @@ set cindent
 set autoindent
 set expandtab
 set laststatus=2
+set nu
 
 au BufRead,BufNewFile *.ctp set filetype=php
 au BufRead,BufNewFile *.install set filetype=php
@@ -33,6 +29,7 @@ au BufRead,BufNewFile *.inc set filetype=php
 au BufRead,BufNewFile *.view set filetype=php
 au BufRead,BufNewFile *.ctp set filetype=php
 call pathogen#infect()
+call pathogen#infect('~/.drush/vimrc/bundle')
 
 filetype plugin indent on
 colorscheme molokai

@@ -64,4 +64,10 @@
 [submodule "bundle/vdebug"]
   path = bundle/vdebug
   url = https://github.com/joonty/vdebug.git
+[submodule "bundle/nerdcommenter"]
+  path = bundle/nerdcommenter
+  url = https://github.com/scrooloose/nerdcommenter.git 
+[submodule "bundle/syntastic"]
+  path = bundle/syntastic
+  url = https://github.com/scrooloose/syntastic.git
 
