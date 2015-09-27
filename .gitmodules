@@ -59,15 +59,18 @@
 	path = bundle/colorschemes
   url = https://github.com/flazz/vim-colorschemes.git
 [submodule "bundle/php.vim"]
-  path = bundle/php.vim
-  url = https://github.com/StanAngeloff/php.vim.git
+	path = bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim.git
 [submodule "bundle/vdebug"]
-  path = bundle/vdebug
-  url = https://github.com/joonty/vdebug.git
+	path = bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
 [submodule "bundle/nerdcommenter"]
-  path = bundle/nerdcommenter
-  url = https://github.com/scrooloose/nerdcommenter.git 
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/syntastic"]
-  path = bundle/syntastic
-  url = https://github.com/scrooloose/syntastic.git
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
 
