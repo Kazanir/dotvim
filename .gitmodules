@@ -74,3 +74,6 @@
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 
+[submodule "bundle/drupalvim"]
+	path = bundle/drupalvim
+	url = http://git.drupal.org/project/vimrc.git
