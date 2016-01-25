@@ -28,8 +28,9 @@ au BufRead,BufNewFile *.module set filetype=php
 au BufRead,BufNewFile *.inc set filetype=php
 au BufRead,BufNewFile *.view set filetype=php
 au BufRead,BufNewFile *.ctp set filetype=php
-call pathogen#infect()
+call pathogen#infect('~/.vim/bundle/drupalvim/bundle')
 call pathogen#infect('~/.drush/vimrc/bundle')
+call pathogen#infect()
 
 filetype plugin indent on
 colorscheme molokai
@@ -56,7 +57,7 @@ set t_Co=256
 
 syntax on
 
-let php_folding=1
+let php_folding=2
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
