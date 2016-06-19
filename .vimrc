@@ -21,6 +21,8 @@ set autoindent
 set expandtab
 set laststatus=2
 set nu
+set ttyfast
+set lazyredraw
 
 au BufRead,BufNewFile *.ctp set filetype=php
 au BufRead,BufNewFile *.install set filetype=php
@@ -28,8 +30,9 @@ au BufRead,BufNewFile *.module set filetype=php
 au BufRead,BufNewFile *.inc set filetype=php
 au BufRead,BufNewFile *.view set filetype=php
 au BufRead,BufNewFile *.ctp set filetype=php
-call pathogen#infect('~/.vim/bundle/drupalvim/bundle')
-call pathogen#infect('~/.drush/vimrc/bundle')
+
+let g:pathogen_disabled = ['vim-behat', 'vim-coffee-script', 'vim-javascript-syntax', 'vdebug', 'vim-hack']
+
 call pathogen#infect()
 
 filetype plugin indent on
