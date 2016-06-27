@@ -6,6 +6,8 @@ nmap gx <Plug>NetrwBrowseX
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
 let &cpo=s:cpo_save
 unlet s:cpo_save
+" set verbosefile=/home/kazanir/vimv.log
+" set verbose=11
 set background=dark
 set backspace=indent,eol,start
 set fileencodings=utf-8,latin1
@@ -21,8 +23,7 @@ set autoindent
 set expandtab
 set laststatus=2
 set nu
-set ttyfast
-set lazyredraw
+set tags=./tags,./_www/tags;/var/www/;~
 
 au BufRead,BufNewFile *.ctp set filetype=php
 au BufRead,BufNewFile *.install set filetype=php
@@ -31,7 +32,11 @@ au BufRead,BufNewFile *.inc set filetype=php
 au BufRead,BufNewFile *.view set filetype=php
 au BufRead,BufNewFile *.ctp set filetype=php
 
-let g:pathogen_disabled = ['vim-behat', 'vim-coffee-script', 'vim-javascript-syntax', 'vdebug', 'vim-hack']
+let g:pathogen_disabled = ['php-foldexpr.vim', 'php-getter-setter', 'vim-coffee-script', 'vim-javascript-syntax', 'vdebug']
+let g:hack#enable=0
+let g:hack#omnifunc=0
+let g:php_html_in_heredoc=0
+let g:php_sql_heredoc=0
 
 call pathogen#infect()
 
@@ -54,13 +59,14 @@ let g:NERDTreeDirArrows=0
 let g:nerdtree_tabs_synchronize_view=1
 let feature_filetype='behat'
 let NERDTreeShowBookmarks=1
+
+let g:PHP_vintage_case_default_indent=1
 "nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set encoding=utf-8
 set t_Co=256
 
 syntax on
-
-let php_folding=2
+set foldmethod=indent
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")

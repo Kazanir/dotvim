@@ -70,10 +70,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
-
 [submodule "bundle/drupalvim"]
 	path = bundle/drupalvim
 	url = http://git.drupal.org/project/vimrc.git
@@ -83,3 +79,18 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/vim-autoclose"]
+	path = bundle/vim-autoclose
+	url = git@github.com:Townk/vim-autoclose
+[submodule "/home/kazanir/.vim/bundle/auto-pairs"]
+	path = /home/kazanir/.vim/bundle/auto-pairs
+	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/php-foldexpr.vim"]
+	path = bundle/php-foldexpr.vim
+	url = git://github.com/swekaj/php-foldexpr.vim
+[submodule "bundle/phpcomplete-extended"]
+	path = bundle/phpcomplete-extended
+	url = git@github.com:m2mdas/phpcomplete-extended.git
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim
