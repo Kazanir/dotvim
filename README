@@ -12,6 +12,11 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
+Using this means that to install a new Pathogen bundle you use the following command instead of a simple clone:
+
+    cd ~/.vim
+    git submodule add git@github.com:barguy/foobundle.vim.git bundle/foobundle.vim
+
 Troubleshooting:
     Q) The status line has unrecognized characters!
     A) You need to patch your font to work with vim-powerline. Go to:
@@ -23,3 +28,5 @@ Troubleshooting:
        let g:Powerline_symbols="fancy"
 
        from .vimrc to enable standard symbols.
+
+
